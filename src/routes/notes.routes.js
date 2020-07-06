@@ -11,7 +11,7 @@ const { renderNoteForm,
 
 //New note
 router.get('/notes/add', renderNoteForm);
-router.post('/notes/add', createNewNote);
+router.post('/notes/new-note', createNewNote);
 
 //Get Note
 router.get('/notes', renderNotes);
@@ -22,7 +22,7 @@ router.get('/notes/edit/:id', renderEditForm)
 router.put('/notes/edit/:id', updateNote)
 
 //Delete Note
-router.delete('/notes/edit/:id', deleteNote)
+router.delete('/notes/delete/:id', deleteNote)
 
 
 module.exports = router;
