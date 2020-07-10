@@ -34,11 +34,9 @@ usersCtrl.signUp = async (req, res) =>{
         }
     }
 }
-
 usersCtrl.renderSignInForm = (req, res) =>{
     res.render('users/signin');
 }
-
 usersCtrl.signIn = passport.authenticate('local', {
     failureRedirect: '/users/signin',
     successRedirect: '/notes',
